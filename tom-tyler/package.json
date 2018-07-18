@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Tom North & Tyler Anyan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

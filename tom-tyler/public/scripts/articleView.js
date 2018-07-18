@@ -75,7 +75,8 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// This function is invoked from the new.html page at the time the page loads. It reveals the new article form and hides the JSON object display. If you click the JSON display field after writing content to the field, it highlights the whole JSON string. Writing to the form also populates the preview under the form and finally when the form is submitted it creates a new article object to paste into the article page.
+
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -88,7 +89,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called in the initNewArticlePage function and writing in the form triggers its execution.
 articleView.create = () => {
   let article;
   $('#articles').empty();
