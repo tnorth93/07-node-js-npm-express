@@ -114,7 +114,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called within the initNewArticlePage function and gets invoked when the new article form is submitted.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -127,7 +127,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // This function is defined at the bottom of article.js. This function is called at the end of the submit() function and is adding the new article to the articles database. 
   article.insertRecord();
 }
 
