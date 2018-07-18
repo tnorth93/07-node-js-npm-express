@@ -18,4 +18,8 @@ app.get('/new', (request, response) => {
   response.status(200).sendfile('./public/new.html');
 })
 
+app.get('*', (request, response) => {
+  response.send('404 FILE NOT FOUND');
+})
+
 app.listen(3000, () => console.log(`You are connected to port ${PORT}`));
